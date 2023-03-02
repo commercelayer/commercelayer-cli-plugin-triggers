@@ -78,7 +78,7 @@
     "@commercelayer/js-auth": "^2.3.0",
     "@commercelayer/sdk": "^4.25.0",
     "@oclif/core": "^2.4.0",
-    "inquirer": "^8.2.5",
+    "inquirer": "^9.1.4",
     "tslib": "^2.5.0"
   },
   "publishConfig": {
