@@ -1,11 +1,10 @@
-import { expect, test } from '@oclif/test'
+import { expect } from 'chai'
+import { runCommand } from '@oclif/test'
+
 
 describe('orders:save_shipping_address_to_customer_address_book', () => {
-  test
-    .timeout(38000)
-    .stdout()
-    .command(['noc'])
-    .it('runs NoC', ctx => {
-      expect(ctx.stdout).to.contain('-= NoC =-')
-    })
+  it('runs NoC', async () => {
+    const { stdout } = await runCommand<{ name: string }>(['noc'])
+    expect(stdout).to.contain('-= NoC =-')
+  }).timeout(38000)
 })
