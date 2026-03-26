@@ -51,7 +51,7 @@
     "generate": "tsx gen/generator.ts",
     "lint": "biome check --enforce-assist=true",
 		"check": "biome check --enforce-assist=true --write",
-		"release": "pnpm upgrade && pnpm test && pnpm prepack && pnpm postpack"
+		"release": "pnpm upgrade && pnpm prepack && pnpm postpack && pnpm test"
   },
   "types": "lib/index.d.ts",
   "devDependencies": {
