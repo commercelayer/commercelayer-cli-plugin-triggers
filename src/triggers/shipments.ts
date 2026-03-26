@@ -6,12 +6,12 @@ export const triggers: Record<string, Trigger> = {
   upcoming: {
       action: 'upcoming',
       trigger: '_upcoming',
-      description: 'Send this attribute if you want to mark this shipment as upcoming.',
+      description: 'Send this attribute if you want to mark this shipment as upcoming. Cannot be passed by sales channels.',
     },
 	cancel: {
       action: 'cancel',
       trigger: '_cancel',
-      description: 'Send this attribute if you want to mark this shipment as cancelled (unless already shipped or delivered).',
+      description: 'Send this attribute if you want to mark this shipment as cancelled (unless already shipped or delivered). Cannot be passed by sales channels.',
     },
 	on_hold: {
       action: 'on_hold',
@@ -46,17 +46,17 @@ export const triggers: Record<string, Trigger> = {
 	reserve_stock: {
       action: 'reserve_stock',
       trigger: '_reserve_stock',
-      description: 'Send this attribute if you want to automatically reserve the stock for each of the associated stock line item. Can be done only when fulfillment is in progress.',
+      description: 'Send this attribute if you want to automatically reserve the stock for each of the associated stock line item. Can be done only when fulfillment is in progress. Cannot be passed by sales channels.',
     },
 	release_stock: {
       action: 'release_stock',
       trigger: '_release_stock',
-      description: 'Send this attribute if you want to automatically destroy the stock reservations for each of the associated stock line item. Can be done only when fulfillment is in progress.',
+      description: 'Send this attribute if you want to automatically destroy the stock reservations for each of the associated stock line item. Can be done only when fulfillment is in progress. Cannot be passed by sales channels.',
     },
 	decrement_stock: {
       action: 'decrement_stock',
       trigger: '_decrement_stock',
-      description: 'Send this attribute if you want to automatically decrement and release the stock for each of the associated stock line item. Can be done only when fulfillment is in progress.',
+      description: 'Send this attribute if you want to automatically decrement and release the stock for each of the associated stock line item. Can be done only when fulfillment is in progress. Cannot be passed by sales channels.',
     },
 	get_rates: {
       action: 'get_rates',
@@ -67,6 +67,16 @@ export const triggers: Record<string, Trigger> = {
       action: 'purchase',
       trigger: '_purchase',
       description: 'Send this attribute if you want to purchase this shipment with the selected rate.',
+    },
+	add_tags: {
+      action: 'add_tags',
+      trigger: '_add_tags',
+      description: 'Comma separated list of tags to be added. Duplicates, invalid and non existing ones are discarded. Cannot be passed by sales channels.',
+    },
+	remove_tags: {
+      action: 'remove_tags',
+      trigger: '_remove_tags',
+      description: 'Comma separated list of tags to be removed. Duplicates, invalid and non existing ones are discarded. Cannot be passed by sales channels.',
     },
 }
 
@@ -84,4 +94,6 @@ export type ActionType =
 	'release_stock' |
 	'decrement_stock' |
 	'get_rates' |
-	'purchase'
+	'purchase' |
+	'add_tags' |
+	'remove_tags'

@@ -16,7 +16,17 @@ export const triggers: Record<string, Trigger> = {
 	reset_circuit: {
       action: 'reset_circuit',
       trigger: '_reset_circuit',
-      description: 'Send this attribute if you want to reset the circuit breaker associated to this resource to \'closed\' state and zero failures count.',
+      description: 'Send this attribute if you want to reset the circuit breaker associated to this resource to \'closed\' state and zero failures count. Cannot be passed by sales channels.',
+    },
+	add_tags: {
+      action: 'add_tags',
+      trigger: '_add_tags',
+      description: 'Comma separated list of tags to be added. Duplicates, invalid and non existing ones are discarded. Cannot be passed by sales channels.',
+    },
+	remove_tags: {
+      action: 'remove_tags',
+      trigger: '_remove_tags',
+      description: 'Comma separated list of tags to be removed. Duplicates, invalid and non existing ones are discarded. Cannot be passed by sales channels.',
     },
 }
 
@@ -24,4 +34,6 @@ export const triggers: Record<string, Trigger> = {
 export type ActionType =
   'disable' |
 	'enable' |
-	'reset_circuit'
+	'reset_circuit' |
+	'add_tags' |
+	'remove_tags'
