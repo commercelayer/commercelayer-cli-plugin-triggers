@@ -42,8 +42,8 @@
     "topicSeparator": ":"
   },
   "scripts": {
-    "prepack": "pnpm generate && pnpm build && oclif manifest && pnpm readme",
     "build": "rm -rf lib && tsc -b",
+    "prepack": "pnpm generate && pnpm build && oclif manifest && pnpm readme",
     "postpack": "rm -f oclif.manifest.json",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
     "posttest": "pnpm lint",
