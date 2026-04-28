@@ -1,12 +1,11 @@
 import { clApi, clColor, clText, clUtil } from '@commercelayer/cli-core'
 import type { CommerceLayerClient, QueryParamsRetrieve, QueryRecordFields, Resource } from '@commercelayer/sdk'
 import commercelayer, { CommerceLayerStatic } from '@commercelayer/sdk'
-import { CLIError } from '@oclif/core/lib/errors'
-import type { Config } from '@oclif/core/lib/interfaces'
+import { Errors, type Interfaces } from '@oclif/core'
 
 
 
-const commercelayerInit = (flags: any, config?: Config): CommerceLayerClient => {
+const commercelayerInit = (flags: any, config?: Interfaces.Config): CommerceLayerClient => {
 
   const organization = flags.organization
   const domain = flags.domain
@@ -24,7 +23,7 @@ const commercelayerInit = (flags: any, config?: Config): CommerceLayerClient => 
 }
 
 
-const exec = async <R extends Resource>(resourceType: string, id: string, action: string, flags: any, fields?: string[], config?: Config): Promise<R> => {
+const exec = async <R extends Resource>(resourceType: string, id: string, action: string, flags: any, fields?: string[], config?: Interfaces.Config): Promise<R> => {
 
   const cl = commercelayerInit(flags, config)
 
@@ -32,7 +31,7 @@ const exec = async <R extends Resource>(resourceType: string, id: string, action
   await resSdk.retrieve(id).catch((err: any) => {
     if (cl.isApiError(err) && (err.status === 404)) {
       const resource = clApi.humanizeResource(clText.singularize(resourceType))
-      throw new CLIError(`Invalid ${resource} or ${resource} not found: ${clColor.msg.error(id)}`)
+      throw new Errors.CLIError(`Invalid ${resource} or ${resource} not found: ${clColor.msg.error(id)}`)
     }
   })
 

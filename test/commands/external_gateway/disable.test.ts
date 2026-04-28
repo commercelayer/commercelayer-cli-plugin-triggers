@@ -1,11 +1,10 @@
-import { expect, test } from '@oclif/test'
+import { runCommand } from '@oclif/test'
+import { expect } from 'chai'
+
 
 describe('external_gateways:disable', () => {
-  test
-    .timeout(61000)
-    .stdout()
-    .command(['noc'])
-    .it('runs NoC', ctx => {
-      expect(ctx.stdout).to.contain('-= NoC =-')
-    })
+  it('runs NoC', async () => {
+    const { stdout } = await runCommand<{ name: string }>(['noc'])
+    expect(stdout).to.contain('-= NoC =-')
+  }).timeout(61000)
 })

@@ -1,8 +1,6 @@
 import { clApi, clColor, clOutput, clUpdate } from '@commercelayer/cli-core'
 import { CommerceLayerStatic, type Resource } from '@commercelayer/sdk'
-import { Args, Command, Flags } from '@oclif/core'
-import type { CLIError } from '@oclif/core/lib/errors'
-import type { CommandError } from '@oclif/core/lib/interfaces'
+import { Args, Command, type Errors, Flags, type Interfaces } from '@oclif/core'
 import exec from './exec'
 
 
@@ -60,12 +58,12 @@ export default abstract class extends Command {
   }
 
 
-  async catch(error: CLIError): Promise<any> {
+  async catch(error: Errors.CLIError): Promise<any> {
     this.handleError(error)
   }
 
 
-  protected handleError(error: CommandError, flags?: any): void {
+  protected handleError(error: Interfaces.CommandError, flags?: any): void {
 
     if (error.message?.match(/Missing \d required args?:\nid/)) {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
