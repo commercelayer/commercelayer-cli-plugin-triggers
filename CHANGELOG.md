@@ -1,3 +1,169 @@
+## [4.18.2](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.18.1...v4.18.2) (2026-04-20)
+
+
+### Bug Fixes
+
+* fix publish workflow ([56f7f73](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/56f7f73cb0288704efedba90ee1f6e385cc7c6cd))
+* run tests in updates workflow ([14d59c9](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/14d59c9af4fa6c3170d5655043e989cd8c73edb0))
+* update dependencies and add updates workflow ([970afd1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/970afd19b9f056fb4678694bbd39dee04a3ad840))
+
+## [4.18.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.18.0...v4.18.1) (2026-03-24)
+
+
+### Bug Fixes
+
+* update dependencies ([1984778](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/1984778b834cf5eafb1a2b35540fdb56840d1786))
+
+# [4.18.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.17.1...v4.18.0) (2026-03-24)
+
+
+### Features
+
+* add biome ([3885480](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/38854800b88134f25fd34cb00214ca315fb4cb69))
+
+## [4.17.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.17.0...v4.17.1) (2026-03-13)
+
+
+### Bug Fixes
+
+* update dependencies ([56b2ad2](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/56b2ad29306c344cfc32dd4b89ffd47e8f5e90fc))
+
+# [4.17.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.16.1...v4.17.0) (2026-03-10)
+
+
+### Features
+
+* add taggable resource shipping_method ([3e2875b](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/3e2875b0a4f4e56681a6822ccbb3164cd0084cd0))
+
+## [4.16.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.16.0...v4.16.1) (2026-03-02)
+
+
+### Bug Fixes
+
+* update dependencies ([32757d2](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/32757d298e73fc76a30ea79d9132bcdeced66d6d))
+
+# [4.16.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.15.1...v4.16.0) (2026-02-23)
+
+
+### Bug Fixes
+
+* update dependencies ([04ce90b](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/04ce90bac94dd37c4c8e7bc1676c59a6bea68782))
+
+
+### Features
+
+* update triggers and dependencies ([c534def](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/c534def8640ae88fc38e5f375966d5424be5d61c))
+
+## [4.15.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.15.0...v4.15.1) (2025-12-05)
+
+
+### Bug Fixes
+
+* update dependencies ([e86fa58](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/e86fa58d95b0d21509e13eb85f647b24e44cc69a))
+
+# [4.15.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.14.3...v4.15.0) (2025-10-13)
+
+
+### Features
+
+* update line_items triggers ([d48c8b2](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/d48c8b206a7115f93bfb7aa80cac406d4d332144))
+
+## [4.14.3](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.14.2...v4.14.3) (2025-07-23)
+
+
+### Bug Fixes
+
+* fix codeql action ([5ca7e5b](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/5ca7e5b460b8399d8e4fc76cb6d9cc16545b9b29))
+
+## [4.14.2](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.14.1...v4.14.2) (2025-07-23)
+
+
+### Bug Fixes
+
+* fix release script ([bf77be4](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/bf77be45e233f9b866b6069c1a9c0c34a79f4b7a))
+
+## [4.14.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.14.0...v4.14.1) (2025-07-23)
+
+
+### Bug Fixes
+
+* fix vulnerability issues ([e1b6c42](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/e1b6c4229892fe75d31fbe17b404ac77a72be1ec))
+
+# [4.14.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.13.0...v4.14.0) (2025-06-09)
+
+
+### Features
+
+* add trigger 'balance' to adyen_payments ([1ede75b](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/1ede75bec303bae5ac011b2e22bcfede1574b2ae))
+
+# [4.13.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.12.1...v4.13.0) (2025-05-06)
+
+
+### Features
+
+* add  more customers triggers ([24341a4](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/24341a47fa359bcb2684397960a43f76cf88af59))
+
+## [4.12.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.12.0...v4.12.1) (2025-03-31)
+
+
+### Bug Fixes
+
+* update dependencies ([b4b0d48](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/b4b0d48117808f2e0d7cda7e70ebe4d02e7f568f))
+
+# [4.12.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.11.0...v4.12.0) (2025-03-19)
+
+
+### Features
+
+* update triggers ([9a800cb](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/9a800cbb0491370f5d8660739782fb1e23da091b))
+
+# [4.11.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.10.0...v4.11.0) (2025-02-26)
+
+
+### Features
+
+* update triggers ([94ff632](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/94ff632a860598bcec2e9872f69b38242a0bb632))
+
+# [4.10.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.9.2...v4.10.0) (2025-02-18)
+
+
+### Features
+
+* add adyen_payments triggers ([1e3dea8](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/1e3dea8af6298d470cf1e1f0afe45107c64fb11e))
+
+## [4.9.2](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.9.1...v4.9.2) (2025-01-31)
+
+
+### Bug Fixes
+
+* update readme and dependencies ([924c8dd](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/924c8ddae1b749cafdd632e87df71ffcd8733ede))
+
+## [4.9.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.9.0...v4.9.1) (2024-12-06)
+
+
+### Bug Fixes
+
+* fix security issue ([617fa98](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/617fa98256e96a41bbabf20231bb90bcaef9f7b0))
+
+# [4.9.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.8.0...v4.9.0) (2024-10-23)
+
+
+### Features
+
+* update triggers of authorizations and captures resources ([cc39f77](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/cc39f77c59c442da35fb55ea1712015a765b54cf))
+
+# [4.8.0](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.7.1...v4.8.0) (2024-10-21)
+
+
+### Bug Fixes
+
+* fix dependencies ([d11b33d](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/d11b33d283ad53ed57bb69b9f649232c3178ccc9))
+
+
+### Features
+
+* add new triggers ([7d6a826](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/commit/7d6a826a84884d90ecda2c97a9e5f835d513b21f))
+
 ## [4.7.1](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/compare/v4.7.0...v4.7.1) (2024-08-21)
 
 

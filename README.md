@@ -93,6 +93,7 @@ $ commercelayer plugins:install triggers
 * [`commercelayer event:trigger ID`](#commercelayer-eventtrigger-id)
 * [`commercelayer export ID`](#commercelayer-export-id)
 * [`commercelayer export:interrupt ID`](#commercelayer-exportinterrupt-id)
+* [`commercelayer export:start ID`](#commercelayer-exportstart-id)
 * [`commercelayer external_gateway ID`](#commercelayer-external_gateway-id)
 * [`commercelayer external_gateway:disable ID`](#commercelayer-external_gatewaydisable-id)
 * [`commercelayer external_gateway:enable ID`](#commercelayer-external_gatewayenable-id)
@@ -186,6 +187,7 @@ $ commercelayer plugins:install triggers
 * [`commercelayer order:pending ID`](#commercelayer-orderpending-id)
 * [`commercelayer order:place ID`](#commercelayer-orderplace-id)
 * [`commercelayer order:refresh ID`](#commercelayer-orderrefresh-id)
+* [`commercelayer order:refresh_prices ID`](#commercelayer-orderrefresh_prices-id)
 * [`commercelayer order:refund ID`](#commercelayer-orderrefund-id)
 * [`commercelayer order:refund_invoice ID`](#commercelayer-orderrefund_invoice-id)
 * [`commercelayer order:remove_tags ID`](#commercelayer-orderremove_tags-id)
@@ -1701,6 +1703,28 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/export/interrupt.ts](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/blob/main/src/commands/export/interrupt.ts)_
+
+### `commercelayer export:start ID`
+
+Send this attribute if you want to restart an 'interrupted' export.
+
+```sh-session
+USAGE
+  $ commercelayer export:start ID [-u [-j -p]]
+
+ARGUMENTS
+  ID  the unique id of the resource
+
+FLAGS
+  -j, --json         print result in JSON format
+  -p, --print        print out the modified resource
+  -u, --unformatted  print JSON output without indentation
+
+DESCRIPTION
+  Send this attribute if you want to restart an 'interrupted' export.
+```
+
+_See code: [src/commands/export/start.ts](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/blob/main/src/commands/export/start.ts)_
 
 ### `commercelayer external_gateway ID`
 
@@ -3784,6 +3808,29 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/order/refresh.ts](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/blob/main/src/commands/order/refresh.ts)_
+
+### `commercelayer order:refresh_prices ID`
+
+Send this attribute if you want to refresh the prices of the line items associated to this order. Cannot be passed by sales channels.
+
+```sh-session
+USAGE
+  $ commercelayer order:refresh_prices ID [-u [-j -p]]
+
+ARGUMENTS
+  ID  the unique id of the resource
+
+FLAGS
+  -j, --json         print result in JSON format
+  -p, --print        print out the modified resource
+  -u, --unformatted  print JSON output without indentation
+
+DESCRIPTION
+  Send this attribute if you want to refresh the prices of the line items associated to this order. Cannot be passed by
+  sales channels.
+```
+
+_See code: [src/commands/order/refresh_prices.ts](https://github.com/commercelayer/commercelayer-cli-plugin-triggers/blob/main/src/commands/order/refresh_prices.ts)_
 
 ### `commercelayer order:refund ID`
 

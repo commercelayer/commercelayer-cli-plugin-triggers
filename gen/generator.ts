@@ -1,5 +1,3 @@
-/* eslint-disable no-console, no-eval */
-
 import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import { join } from 'node:path'
@@ -94,6 +92,7 @@ const updateTriggers = async (): Promise<{ [k: string]: any }> => {
 
     // biome-ignore lint/security/noGlobalEval: left for compatibility with old linter
     generatedTriggers[r] = eval(`({${actionsObject}})`)
+
 
     console.log(`Updated ${r} triggers`)
 
